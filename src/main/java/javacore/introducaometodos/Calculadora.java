@@ -26,8 +26,41 @@ public class Calculadora {
 
     }
 
+    public void imprimeDoisNumerosDivididos(double num5, double num6){
+        if (num6 != 0){
+            System.out.println( num5 / num6);
+            return;
+        }
+        System.out.println("Não divide por zero");
+
+    }
+
     //casting
     public double divideDoisNumerosCasting(double num3, double num4){
         return (int) (num3 / num4);
+    }
+
+    public void alteraDoisNumeros(int num7, int num8){
+        num7 = 8;
+        num8 = 9;
+
+        System.out.println("Num7 " + num7);
+        System.out.println("Num8 " + num8);
+    }
+
+    public void somaArray(int[] numeros){
+        int soma = 0;
+        for(int num : numeros){
+            soma += num;
+        }
+        System.out.println(soma);
+    }
+
+    public void somaVarArgs(int... numeros){
+        int soma = 0;
+        for(int num : numeros){
+            soma += num;
+        }
+        System.out.println(soma);
     }
 }

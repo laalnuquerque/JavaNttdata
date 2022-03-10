@@ -10,5 +10,7 @@ public class ProfessorTest {
         professor.matricula = "1245";
         professor.rg = "48204981x";
         professor.cpf = "456854255";
+
+        System.out.println(professor.nome);
     }
 }
