@@ -1,10 +1,10 @@
 package javacore.test;
 
-import javacore.introducaoclasses.Estudante;
+import javacore.introducaoclasses.Estudantes;
 
 public class EstudanteTest {
     public static void main(String[] args) {
-        Estudante joao = new Estudante();
+        Estudantes joao = new Estudantes();
         joao.nome = "João";
         joao.matricula = "1212";
         joao.idade = 15;

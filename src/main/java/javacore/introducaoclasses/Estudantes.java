@@ -1,6 +1,6 @@
 package javacore.introducaoclasses;
 
-public class Estudante {
+public class Estudantes {
     public String nome;
     public String matricula;
     public int idade;
