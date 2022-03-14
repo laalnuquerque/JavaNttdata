@@ -4,33 +4,33 @@ import javacore.introducaometodos.Calculadora;
 
 public class ClaculadoraTest {
     public static void main(String[] args) {
-        Calculadora calculadora = new Calculadora();
+        //Calculadora calculadora = new Calculadora();
 
         //chamado o metodo criado
-        calculadora.somaDoisNumeros();
+        Calculadora.somaDoisNumeros();
 
         System.out.println();
 
-        calculadora.subtraiDoisNumeros();
+        Calculadora.subtraiDoisNumeros();
 
         System.out.println();
 
         //CASTING converter
         //calculadora.multiplicaDoisNumeros(5, (byte)10);
 
-        calculadora.multiplicaDoisNumeros(5, 10);
+        Calculadora.multiplicaDoisNumeros(5, 10);
 
-        double result = calculadora.divideDoisNumeros(5, 0);
+        double result = Calculadora.divideDoisNumeros(5, 0);
         System.out.println(result);
 
-        double result2 = calculadora.divideDoisNumerosCasting(5, 6);
+        double result2 = Calculadora.divideDoisNumerosCasting(5, 6);
         System.out.println(result2);
 
-        calculadora.imprimeDoisNumerosDivididos(5, 0);
+        Calculadora.imprimeDoisNumerosDivididos(5, 0);
 
         int[] numeros = {1, 2, 3, 4, 5};
-        calculadora.somaArray(numeros);
+        Calculadora.somaArray(numeros);
 
-        calculadora.somaVarArgs(1, 2, 3, 4, 5);
+        Calculadora.somaVarArgs(1, 2, 3, 4, 5);
     }
 }

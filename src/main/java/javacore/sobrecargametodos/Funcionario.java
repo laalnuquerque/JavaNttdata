@@ -1,4 +1,4 @@
-package javacore.introducaometodos;
+package javacore.sobrecargametodos;
 
 public class Funcionario {
     private String nome;
@@ -6,7 +6,22 @@ public class Funcionario {
     private double salario;
     private String rg;
 
+    //construtor - java cria sozinho
+    public Funcionario(String nome, String cpf, double salario, String rg){
+        this.nome = nome;
+        this.cpf = cpf;
+        this.salario = salario;
+        this.rg = rg;
 
+    }
+
+    //sobrecarga
+    public Funcionario(){
+
+    }
+
+
+    //sobrecarga
     public void init(String nome, String cpf, double salario){
         this.nome = nome;
         this.cpf = cpf;
@@ -15,12 +30,12 @@ public class Funcionario {
     }
 
     public void init(String nome, String cpf, double salario, String rg){
-        this.nome = nome;
-        this.cpf = cpf;
-        this.salario = salario;
+        //chama o metodo de cima primeiro e depois executa esse
+        init(nome, cpf, salario);
         this.rg = rg;
     }
 
+    //metodo
     public void imprime(){
         System.out.println(this.nome);
         System.out.println(this.cpf);
