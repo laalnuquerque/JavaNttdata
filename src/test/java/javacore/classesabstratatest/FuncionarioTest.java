@@ -1,8 +1,7 @@
 package javacore.classesabstratatest;
 
-import classeabstrata.Funcionario;
-import classeabstrata.Gerente;
-import classeabstrata.Vendedor;
+import javacore.classeabstrata.Gerente;
+import javacore.classeabstrata.Vendedor;
 
 public class FuncionarioTest {
     public static void main(String[] args) {

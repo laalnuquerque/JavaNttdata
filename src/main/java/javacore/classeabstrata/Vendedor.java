@@ -1,4 +1,4 @@
-package classeabstrata;
+package javacore.classeabstrata;
 
 public class Vendedor extends  Funcionario{
 

@@ -1,4 +1,4 @@
-package classeabstrata;
+package javacore.classeabstrata;
 
 public abstract class Funcionario extends Pessoa{
     protected String clt;

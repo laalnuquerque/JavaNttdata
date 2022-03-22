@@ -1,4 +1,4 @@
-package classeabstrata;
+package javacore.classeabstrata;
 
 public abstract class Pessoa {
     protected String nome;
